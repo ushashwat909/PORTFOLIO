@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantumstock Simulator</title>
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="quantumstock.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <span class="logo-icon">⚛</span> Q//W
+                </div>
+                <button class="theme-toggle">🌙</button>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">📈</span> OVERVIEW
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">💼</span> PORTFOLIO
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">🧾</span> SPENDING
+                </a>
+                <a href="#" class="nav-item active">
+                    <span class="nav-icon">🧮</span> COMPOUNDING
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">🛡️</span> RISK ENGINE
+                </a>
+            </nav>
+            
+            <div class="user-profile">
+                <div class="user-avatar">
+                    <span class="avatar-icon">👤</span>
+                </div>
+                <div class="user-info">
+                    <div class="user-name">Demo User</div>
+                    <div class="user-role">OPERATOR</div>
+                </div>
+                <a href="index.html" class="logout-btn" title="Back to Portfolio">⏻</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <h1>C++ COMPOUND INTEREST SIMULATOR</h1>
+                <div class="status-badge">⚡ C++ THREAD LOADED</div>
+            </header>
+
+            <div class="dashboard-grid">
+                <!-- Inputs Panel -->
+                <section class="panel inputs-panel">
+                    <h2><span class="panel-icon">⎘</span> RETRIEVE PROJECTION COEFFICIENTS</h2>
+                    
+                    <div class="input-group">
+                        <div class="input-header">
+                            <label>INITIAL CAPITAL (PRINCIPAL)</label>
+                            <span class="value-display" id="principal-display">$10,000.00</span>
+                        </div>
+                        <input type="range" id="principal" min="1000" max="100000" step="500" value="10000">
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-header">
+                            <label>MONTHLY CONTRIBUTION</label>
+                            <span class="value-display" id="contribution-display">$500.00</span>
+                        </div>
+                        <input type="range" id="contribution" min="0" max="5000" step="50" value="500">
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-header">
+                            <label>ANNUAL PERCENT GROWTH (%)</label>
+                            <span class="value-display" id="rate-display">8.0%</span>
+                        </div>
+                        <input type="range" id="rate" min="1.0" max="15.0" step="0.1" value="8.0">
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-header">
+                            <label>INVESTMENT HORIZON (YEARS)</label>
+                            <span class="value-display" id="years-display">10 Years</span>
+                        </div>
+                        <input type="range" id="years" min="1" max="40" step="1" value="10">
+                    </div>
+                </section>
+
+                <!-- Results Panel -->
+                <section class="panel results-panel">
+                    <h2><span class="panel-icon">⬡</span> MATH CORE RESPONSE</h2>
+                    
+                    <div class="result-card primary-result">
+                        <div class="result-label">PROJECTED MATURITY VALUE</div>
+                        <div class="result-value huge" id="maturity-value">$114,279.24</div>
+                    </div>
+                    
+                    <div class="secondary-results">
+                        <div class="result-card">
+                            <div class="result-label">TOTAL CONTRIBUTIONS</div>
+                            <div class="result-value" id="total-contributions">$70,000.00</div>
+                        </div>
+                        <div class="result-card">
+                            <div class="result-label">GROWTH YIELD EARNED</div>
+                            <div class="result-value" id="growth-yield">$44,279.24</div>
+                        </div>
+                    </div>
+
+                    <div class="footer-note">
+                        <span class="code-icon">&lt;/&gt;</span> Direct handoff of raw memory bounds through ctypes into C++ high-perf calculations.
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="quantumstock.js"></script>
+</body>
+</html>

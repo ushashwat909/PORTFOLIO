@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Import Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Animated Shapes -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">Shashwat.</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero fade-in">
+            <div class="hero-content">
+                <div class="profile-img-container">
+                    <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic">
+                    <div class="glow-ring"></div>
+                </div>
+                <h1>Hello, I'm <span class="highlight">Shashwat Upadhyay</span></h1>
+                <p class="bio">Aspiring Data Scientist and Artifcial Intelligence and Machine Learning Learner</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section fade-in">
+            <h2>Education</h2>
+            <div class="education-content glass-panel">
+                <div class="edu-item">
+                    <h3>Bachelor of Technology</h3>
+                    <p class="edu-meta">Jaypee University Of Engineering And Technology <span>|</span> 2025 - 2029</p>
+                    <p>Focus on software engineering, data science, and modern algorithms.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section fade-in">
+            <h2>Skills & Technologies</h2>
+            <div class="glass-panel padded-panel">
+                <ul class="skills-list">
+                    <li><span class="skill-icon">🖥️</span> C++</li>
+                    <li><span class="skill-icon">🐍</span> Python</li>
+                    <li><span class="skill-icon">🧠</span> Machine Learning</li>
+                    <li><span class="skill-icon">📊</span> Data Science</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2 class="fade-in">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-panel fade-in" style="transition-delay: 0.1s;">
+                    <div class="project-img-wrapper">
+                        <img src="fastlib-preview.jpg" alt="Fastlib Preview">
+                    </div>
+                    <div class="project-info">
+                        <h3><a href="https://github.com/ushashwat909/Fastlib.git" target="_blank" class="project-link">Fastlib <span class="arrow">↗</span></a></h3>
+                        <p>A high-performance Library Management System featuring an automated Python metadata pipeline and a custom C-based B-Tree search engine that achieves sub-millisecond query retrieval across 100,000+ titles. Built with a normalized MySQL schema that cut data redundancy by 25% while ensuring cross-branch data consistency.</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card glass-panel fade-in" style="transition-delay: 0.2s;">
+                    <div class="project-img-wrapper">
+                        <img src="quantumstock-preview.png" alt="Quantumstock Preview">
+                    </div>
+                    <div class="project-info">
+                        <h3><a href="quantumstock.html" target="_blank" class="project-link">Quantumstock <span class="arrow">↗</span></a></h3>
+                        <p>A comprehensive personal finance and stock dashboard integrating Python and real-time Alpha Vantage API data with a high-speed C++ analytics engine. Features a localized MySQL caching layer to bypass API rate limits and process large historical datasets for instantaneous financial indicator calculations (RSI, Moving Averages).</p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card glass-panel fade-in" style="transition-delay: 0.3s;">
+                    <div class="project-img-wrapper">
+                        <img src="https://via.placeholder.com/400x250" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3><a href="#" target="_blank" class="project-link">Project Three <span class="arrow">↗</span></a></h3>
+                        <p>A short description of the third project goes here. Explaining what it does, the problem it solves, and the tech used.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section fade-in">
+            <h2>Let's Connect</h2>
+            <div class="contact-container glass-panel">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Shashwat Upadhyay. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
